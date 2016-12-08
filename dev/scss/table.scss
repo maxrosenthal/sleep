@@ -1,0 +1,38 @@
+@import 'variables';
+table {
+    border: none;
+    margin: 1.2em auto;
+    th,
+    td {
+        border: none;
+        padding-bottom: 1.2em;
+        width: 5.5em;
+        text-align: left;
+        &:nth-child(2) {
+            text-align: right;
+        }
+    }
+    th {
+        // &:nth-child(1) {
+        //     padding-right: 1em;
+        // }
+        // &:nth-child(2) {
+        //     padding-left: 1em;
+        // }
+    }
+    td {
+        &:nth-child(1) {
+            padding-left: .5em;
+        }
+        &:nth-child(2) {
+            text-align: right;
+            padding-right: .5em;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    table {
+        font-size: 26px;
+    }
+}

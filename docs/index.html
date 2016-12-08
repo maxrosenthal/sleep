@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Sleeptime</title>
+    <meta name="description" content="Calculate sleep time base on REM cyle. Work offline">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://leloctai.github.io/sleeptime/image/Screenshot.jpg">
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1080" />
+    <meta property="og:image:height" content="1080" />
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="icon" type="image/png" href="image/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="image/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="image/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="image/favicon.ico">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="theme-color" content="#2e0805">
+
+    <link rel="stylesheet" href="styles.min.css">
+
+    <script defer src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="scripts.min.js" defer></script>
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <select id="ws">
+        <option selected>I need to wake up at</option>
+        <option>I need to go to sleep at</option>
+    </select>
+    <div class="time-picker">
+        <select id="hour">
+            <option>01</option>
+            <option>02</option>
+            <option>03</option>
+            <option>04</option>
+            <option>05</option>
+            <option selected>06</option>
+            <option>07</option>
+            <option>08</option>
+            <option>09</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+        </select>
+        <span class="middle">:</span>
+        <select id="minute">
+            <option selected>00</option>
+            <option>05</option>
+            <option>10</option>
+            <option>15</option>
+            <option>20</option>
+            <option>25</option>
+            <option>30</option>
+            <option>35</option>
+            <option>40</option>
+            <option>45</option>
+            <option>50</option>
+            <option>55</option>
+        </select>
+        <form class="ampm">
+            <input class="ampm" type="radio" name="ap" id="AM" value="AM" checked>
+            <label for="AM">AM</label>
+            <input class="ampm" type="radio" name="ap" id="PM" value="PM">
+            <label for="PM">PM</label>
+        </form>
+    </div>
+    <table id="result"></table>
+
+    <div class="social-btn">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </div>
+</body>
+
+</html>

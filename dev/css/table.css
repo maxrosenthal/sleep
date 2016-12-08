@@ -1,0 +1,21 @@
+table {
+  border: none;
+  margin: 1.2em auto; }
+  table th,
+  table td {
+    border: none;
+    padding-bottom: 1.2em;
+    width: 5.5em;
+    text-align: left; }
+    table th:nth-child(2),
+    table td:nth-child(2) {
+      text-align: right; }
+  table td:nth-child(1) {
+    padding-left: .5em; }
+  table td:nth-child(2) {
+    text-align: right;
+    padding-right: .5em; }
+
+@media (max-width: 375px) {
+  table {
+    font-size: 26px; } }
